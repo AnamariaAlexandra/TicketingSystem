@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styleusr.css" />
+  </head>
+  <body>
+    <div class="form">
+      <form class="formFields" action="#">
+        <fieldset>
+          <legend>FIRST NAME</legend>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="First Name"
+          /><br /><br />
+        </fieldset>
+        <fieldset>
+          <legend>LAST NAME</legend>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Last Name"
+          /><br /><br />
+        </fieldset>
+        <fieldset>
+          <legend>EMAIL</legend>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Email"
+          /><br /><br />
+        </fieldset>
+        <fieldset>
+          <legend>SUBJECT</legend>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject"
+          /><br /><br />
+        </fieldset>
+        <fieldset>
+          <legend>PRIORITY</legend>
+          <input
+            type="range"
+            id="priority"
+            name="priority"
+            min="0"
+            max="100"
+            step="50"
+            list="tickmarks"
+          />
+          <datalist id="tickmarks">
+            <option value="0" label="Low"></option>
+            <option value="50" label="Medium"></option>
+            <option value="100" label="High"></option>
+          </datalist>
+        </fieldset>
+        <fieldset>
+          <legend>FINAL DATE</legend>
+          <input type="date" id="fdate" name="fdate" /><br /><br />
+        </fieldset>
+        <fieldset>
+          <legend>DESCRIPTION</legend>
+          <textarea
+            name="desc"
+            id="desc"
+            cols="30"
+            rows="5"
+            placeholder="Write here.."
+          ></textarea>
+        </fieldset>
+      </form>
+      <div class="btns">
+        <button class="clear">CLEAR</button>
+        <button class="submit">SUBMIT</button>
+      </div>
+    </div>
+  </body>
+</html>
